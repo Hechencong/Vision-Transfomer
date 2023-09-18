@@ -88,9 +88,9 @@ class PositionwiseFeedForward(nn.Module):
     def __init__(self, d_in, d_hid, dropout = 0.1):
         '''
 
-        :param d_in:输入向量的维度
-        :param d_hid:隐藏层的维度
-        :param dropout:Dropout概率
+        :param d_in: 输入张量的维度
+        :param d_hid: 隐藏层的维度
+        :param dropout: Dropout概率
         '''
         super().__init__()
         self.w_1 = nn.Linear(d_in, d_hid)
